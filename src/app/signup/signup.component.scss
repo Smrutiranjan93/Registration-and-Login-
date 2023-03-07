@@ -1,0 +1,35 @@
+@import '~ngx-toastr/toastr';
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+   
+    // justify-content: center;
+}
+h2{
+    align-items: center;
+    width: 100%;
+    display: flex;
+
+}
+.login-container {
+    // margin-top: 50px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+.login-content {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+.login-toolbar {
+    // margin-left: 50%;
+    margin-right: 40%;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }

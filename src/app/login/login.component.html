@@ -1,0 +1,56 @@
+<form>
+  <div class="login-container">
+    <div class="login-content">
+      <mat-toolbar class="login-toolbar" color="primary">Login</mat-toolbar>
+      <mat-card>
+        <form #loginForm="ngForm" (ngSubmit)="save(loginForm.value)">
+          <mat-form-field>
+            <mat-icon matPrefix>person_outline</mat-icon>
+            <input
+              autofocus
+              type="text"
+              matInput
+              placeholder="Username"
+              name="username"
+              ngModel
+            />
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-icon matPrefix>lock_outline</mat-icon>
+            <input
+              type="password"
+              autocomplete="false"
+              matInput
+              placeholder="Password"
+              name="password"
+              ngModel
+            />
+          </mat-form-field>
+
+          <button type="submit" mat-raised-button color="primary">LOGIN</button>
+        </form>
+        <!-- <div class="g-signin2" data-onsuccess="onSignIn" data-longtitle="true"></div> -->
+        <mat-toolbar class="login-toolbar" style="background-color: white"
+          >login with</mat-toolbar
+        >
+
+        <div class="socialMediaFlex">
+          <button mat-fab color="primary">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+          </button>
+          <button mat-fab color="accent">
+            <i class="fa-brands fa-google fa-2x"></i>
+
+          </button>
+        
+        </div>
+        <br />
+        <span>
+          If You don't have a account yet please
+          <a routerLink="/registration">REGISTER HERE</a></span
+        >
+      </mat-card>
+    </div>
+  </div>
+</form>
