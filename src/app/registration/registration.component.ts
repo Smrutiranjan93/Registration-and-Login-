@@ -15,30 +15,7 @@ import {
   styleUrls: ['./registration.component.scss'],
 })
 export class RegistrationComponent implements OnInit {
-  // registerForm: FormGroup<any>;
-  // submitted:boolean;
-  constructor(private formBuilder: FormBuilder) {
-    // this.registerForm = new FormControl();
-    // this.registerForm.setValue({
-    //   name: 'John Doe',
-    //   email: 'johndoe@example.com',
-    //   password: 'password',
-    // });
-  }
+  constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void {
-    // this.registerForm=this.formBuilder.group({
-
-    // })
-
-    // registerForm = new FormGroup({
-    //   name: new FormGroup({
-    //     FirstName: new FormControl('', Validators.required),
-    //     LastName: new FormControl('', Validators.required),
-    //     PhoneNumber: new FormControl('', Validators.required),
-    //     email: new FormControl('', Validators.required),
-    //     password: new FormControl('', Validators.required),
-    //   }),
-    // });
-  }
+  ngOnInit(): void {}
 }

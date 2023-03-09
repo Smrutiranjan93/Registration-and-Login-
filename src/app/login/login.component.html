@@ -10,7 +10,7 @@
               autofocus
               type="text"
               matInput
-              placeholder="Username"
+              placeholder="UserName"
               name="username"
               ngModel
             />
@@ -29,23 +29,11 @@
           </mat-form-field>
 
           <button type="submit" mat-raised-button color="primary">LOGIN</button>
+          <span class="mt-5">
+            If You forgot Password Please &nbsp;
+            <a routerLink="/forgotpassword">FORGOT PASSWORD</a></span
+          >
         </form>
-        <!-- <div class="g-signin2" data-onsuccess="onSignIn" data-longtitle="true"></div> -->
-        <mat-toolbar class="login-toolbar" style="background-color: white"
-          >login with</mat-toolbar
-        >
-
-        <div class="socialMediaFlex">
-          <button mat-fab color="primary">
-            <i class="fa-brands fa-facebook fa-2x"></i>
-          </button>
-          <button mat-fab color="accent">
-            <i class="fa-brands fa-google fa-2x"></i>
-
-          </button>
-        
-        </div>
-        <br />
         <span>
           If You don't have a account yet please
           <a routerLink="/registration">REGISTER HERE</a></span

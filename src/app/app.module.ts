@@ -11,7 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
-
+import { BodyComponent } from './body/body.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { QueryComponent } from './query/query.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,9 @@ import { SignupComponent } from './signup/signup.component';
     HeaderComponent,
     LoginComponent,
     SignupComponent,
+    BodyComponent,
+    ForgotPasswordComponent,
+    QueryComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +39,7 @@ import { SignupComponent } from './signup/signup.component';
     ToastrModule.forRoot(),
   ],
 
-  providers: [
-  
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

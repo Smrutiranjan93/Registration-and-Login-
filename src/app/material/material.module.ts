@@ -8,6 +8,12 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { MatCarouselModule } from 'ng-mat-carousel';
+import {MatSelectModule} from '@angular/material/select';
 const material = [
   MatButtonModule,
   MatToolbarModule,
@@ -16,7 +22,14 @@ const material = [
   MatCardModule,
   MatFormFieldModule,
   FormsModule,
-  MatInputModule
+  MatInputModule,
+  MatGridListModule,
+  MatTreeModule,
+  MatSidenavModule,
+  MatListModule,
+  MatSelectModule,
+  MatCarouselModule.forRoot()
+
 ];
 @NgModule({
   imports: [material],

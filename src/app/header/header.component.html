@@ -3,21 +3,23 @@
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with menu icon"
+    routerLink="/"
   >
-    <mat-icon>menu</mat-icon>
+    <mat-icon routerLink="/">home</mat-icon>
   </button>
-  <span>My Booking App</span>
-  <span class="example-spacer"></span>
- 
-  <!-- menu section -->
- 
-    <button mat-raised-button color="warn" routerLink ="/login" routerLinkActive="active" >LOGIN</button>
-    <button mat-raised-button color="accent" routerLink ="/signup" >REGISTER</button>
-  <!-- </ng-template> -->
-  <!-- <mat-menu #aboveMenu="matMenu" yPosition="above">
-  <button mat-menu-item>Login </button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu> -->
+
+  <span style="margin-left: 10px"
+    >Student Examination and Admit Card Management &nbsp;(Govt of Bihar)</span
+  >
+
+  <div class="menu">
+    <button
+      mat-raised-button
+      color="accent"
+      routerLink="/login"
+      routerLinkActive="active"
+    >
+      STUDENT LOGIN
+    </button>
+  </div>
 </mat-toolbar>
-
-

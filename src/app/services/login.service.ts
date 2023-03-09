@@ -11,12 +11,6 @@ export class LoginService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  // public login(loginData: any) {
-  //   return this.http.post(this.API + '/login', loginData, {
-  //     headers: this.requestHeader,
-  //   });
-  // }
-
   login(data: any) {
     this.http.post(this.API + '/login', data).subscribe((result: any) => {
       localStorage.setItem('token', result.access_token);
